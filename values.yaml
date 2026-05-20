@@ -100,12 +100,12 @@ infisical:
   extraEnv: []
 
   resources:
-    limits:
-      # -- Memory limit for Infisical container
-      memory: 1000Mi
     requests:
-      # -- CPU request for Infisical container
-      cpu: 350m
+      memory: "500Mi"
+      cpu: "350m"
+    limits:
+      memory: "1000Mi"
+      cpu: "500m"
 
 ingress:
   # -- Enable or disable ingress configuration
