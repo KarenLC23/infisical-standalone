@@ -83,6 +83,9 @@ infisical:
 
   # -- Kubernetes Secret reference containing Infisical root credentials
   kubeSecretRef: "infisical-secrets"
+  secrets:
+    INFISICAL_API_KEY: "local-key"
+    INFISICAL_DB_URL: "sqlite:///data/infisical.db"
 
   service:
     # -- Custom annotations for Infisical service
