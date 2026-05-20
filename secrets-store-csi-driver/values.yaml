@@ -236,6 +236,7 @@ imagePullSecrets: []
 # refer to https://kubernetes-csi.github.io/docs/token-requests.html for more details.
 # Supported only for Kubernetes v1.20+
 tokenRequests: []
+  - audience: "infisical"
 # - audience: aud1
 # - audience: aud2
 
